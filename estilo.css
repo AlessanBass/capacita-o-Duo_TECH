@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+
+body{
+    background-image: linear-gradient(to right,rgb(15, 9, 9), rgb(11, 11, 158));
+    color: aliceblue;
+    margin-bottom: 8px;
+    text-align: center;
+} 
+
+header{
+    /* border: 1px solid white; */
+    background-color: black;
+    border-radius: 50px;
+    margin: 5px auto auto auto;
+    width: 95%;
+    box-shadow: 5px 5px 8px aqua;
+    position: sticky;
+    top: 1px;
+    /* border-radius: 25px 130px 25px 130px; */
+}
+
+.titulo{
+/*     text-align: center; */
+     padding: 10px;
+     font-size: 2.5em;
+     text-shadow: 0px 0px 8px red;
+}
+
+nav{
+    padding: 15px;
+}
+
+.link-header{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4em; 
+    font-weight: bold;
+    
+}
+
+.link-header:hover{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.git:hover{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.insta:hover{
+    background-color: rgb(255, 9, 255);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.linkedin:hover{
+    background-color: blue;
+    border-radius: 20px;
+    padding: 10px;
+    color:white;
+}
+
+main, .teste{
+    margin: 2% auto auto auto;
+    border: 1px solid white;
+    width: 90%;
+    background-color: rgb(18, 18, 216);
+    border-radius: 25px 130px 25px 130px;
+    box-shadow: 0px 0px 8px aqua;
+}
+
+.foto-perfil{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    grid-area: esq;
+    margin-left: 100px;
+}
+
+.logo-corinthians{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    grid-area: esq-baixo;
+    margin-left: 100px;
+}
+
+section{
+    border: 1px solid white;
+     background-color: rgb(3, 3, 104);
+   /*  background-image: linear-gradient(to top, black, blue); */
+    border-radius: 25px 70px 25px 70px;
+    padding: 30px;
+    width: 70%;
+    margin: 2% auto 2% auto;
+}
+
+.section-sobre{
+    grid-area: dir;
+}
+
+.section-curiosidade{
+    grid-area: dir-baixo;
+}
+
+.grid-sobre{
+    display: grid;
+    /* grid-template-columns: 1; */
+      /*  grid-template-rows: 1fr 1fr; */
+   /*  grid-column-gap: 10px; */
+/*     place-items: center; */
+    grid-template-areas: 
+      "esq dir"
+      "esq-baixo dir-baixo"
+    ;
+}
+
+.h2-sobre{
+    /*  border: 1px solid violet; */
+     background-image: linear-gradient(to right,black, rgb(14, 14, 66), black);
+     text-shadow: 0px 0px 8px black;
+     border-radius: 50px;
+     padding: 10px;
+     margin-bottom: 10px;
+   /*   width: 20%;
+     margin: 0 auto; */
+}
+
+p{
+    text-align: left;
+    font-size: 1.2em;
+}
+
+section:hover{
+    box-shadow: 5px 5px 6px black;
+    /* color: red; */
+}

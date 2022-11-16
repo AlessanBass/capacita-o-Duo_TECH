@@ -1,0 +1,90 @@
+main{
+ /*    border: 1px solid red; */
+    padding: 10px;
+    width: 85%;
+    margin: 20px auto auto auto;
+}
+
+.section{
+    border: 1px solid white;
+    background-image: linear-gradient(to right, #151626, rgb(11, 11, 126)); 
+    padding: 20px;  
+    margin-bottom: 10px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 8px black;
+}
+
+.section:hover{
+    color: aqua;
+    box-shadow: 5px 5px 8px aqua;
+   /*  box-shadow: 10px 10px 8px aqua; */
+}
+.img-perfil{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    grid-area: perfil;
+    margin-left: 20px;
+}
+
+.b{
+    grid-area: b;
+    /* border: 1px solid white; */
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.grid-section-sobre{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    place-items: center;
+    justify-content: center;
+    grid-template-areas: 
+    "perfil"
+    "b"
+    ;
+}
+.texto-sobre{
+   /*  border: 8px solid blue; */
+    padding: 10px;
+    font-size: 1.9em;
+    width: 100%;
+    margin: 10px auto auto auto;
+    background-color: blue;
+    border-radius: 50px;
+}
+
+.Texto-main{
+   /*  border: 3px solid red; */
+/*     background-color: black; */
+   /*  background-image: linear-gradient(to right, blue, black); */
+    margin: auto auto 20px auto;
+    width: 30%;
+    padding: 10px;
+    font-size: 2.3em;
+    border-radius: 30px;
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: auto auto;
+  /*   place-items: center; */
+    justify-content: center;
+    gap: 30px;
+    grid-template-areas: 
+    'esq meio dir'
+    ;
+}
+
+.esq{
+    grid-area: esq;
+    
+}
+.meio{
+    grid-area: meio;
+}
+.dir{
+    grid-area: dir;
+}

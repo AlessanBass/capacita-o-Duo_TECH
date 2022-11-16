@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url("/desafafio-1/img/Oswald-Medium.ttf");
+}
+
+body{
+    text-align: center;
+    color: white;
+    font-family: 'Oswald-Medium';
+    background-image: linear-gradient(to right, rgb(9, 9, 128), red);
+}
+
+header{
+    padding: 10px;
+    background-image: linear-gradient(to right, #151626, rgb(11, 11, 126));
+    width: 85%;
+    margin: 10px auto auto auto;
+    border: 1px solid white;
+    background-color: black;
+    border-radius: 20px 75px 20px 75px;
+    box-shadow: 5px 5px 8px black;
+    /* border-radius: 20%; */
+}
+
+.logo-icon-main{
+    width: 120px;
+    height: 120px;
+    grid-area: computer;
+}
+
+.grid-main{
+   /*  border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    justify-content: center;
+    grid-template-areas:
+    "computer texto"
+    ;
+
+}
+.logo{
+ /*   border: 1px solid white; */
+   /*  background-color: black; */
+   
+    padding: 20px;
+    color: white;
+    margin: 0 auto;
+    /* width: 0%; */
+    font-size: 2.9em;
+    grid-area: texto;
+}
+
+.logo-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 2px;
+}
+.link-header{
+    text-decoration: none;
+    color: azure;
+    padding: 10px;
+    margin-right: 10px;
+   /*  margin-left: -5px; */
+    font-size: 1.5em;
+}
+.link-header:hover{
+    padding: 10px;
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    font-weight: bold;
+}
+.d:hover{
+    color: blue;
+    font-weight: bold;
+}
+.f:hover{
+    color: rgb(202, 53, 202);
+    font-weight: bold;
+}
+.h:hover{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+.grid-header{
+ /*    border: 1px solid red; */
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+    place-items: center;
+    justify-content: center;
+    grid-template-areas:
+    "a b c d e f g h"
+    ;
+}
+
+.a{
+    grid-area: a;
+}
+
+.b{
+    grid-area: b;
+}
+
+.c{
+    grid-area: c;
+}
+
+.d{
+    grid-area: d;
+}
+
+.e{
+    grid-area: e;
+}
+
+.f{
+    grid-area: f;
+}
+
+.g{
+    grid-area: g;
+}
+
+.h{
+    grid-area: h;
+}
